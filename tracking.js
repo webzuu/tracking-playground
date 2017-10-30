@@ -11,6 +11,7 @@
         var href = $(evt.currentTarget).attr('href');
         history.pushState(null, null, href);
         ga('set', 'page', href);
+        ga('set', 'nonInteraction', true);
         ga('send', 'pageview');
       });
     });
